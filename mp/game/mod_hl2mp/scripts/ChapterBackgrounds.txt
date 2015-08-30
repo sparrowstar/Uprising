@@ -1,4 +1,6 @@
 "chapters"
 {
 	1	"background01"
+	1	"background02"
+	1	"background03"
 }
