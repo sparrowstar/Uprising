@@ -6,5 +6,5 @@ VertexLitGeneric
 
 	// "$bumpmap" "null-bumpmap"
 	"$halflambert" "1"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }

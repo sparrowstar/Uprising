@@ -1,5 +1,5 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models\weapons\v_models\garand/v_garand"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }

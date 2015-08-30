@@ -18,5 +18,4 @@
 	"$rimlight" "1"
 	"$rimlightboost" "0.2"
 	"$rimlightexponent" "4"
-	"$lightwarptexture" "models\lightwarps\hand_lightwarp"
 }

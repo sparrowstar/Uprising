@@ -9,7 +9,7 @@
 	"$phongfresnelranges"	"[0.1 0.8 0.8]"
 //	"$halflambert" "1"
 	"$phongexponenttexture" "models\weapons\v_models\mp40/v_mp40_exponent"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 							}
 
 

@@ -5,7 +5,7 @@
 	"$basealphaenvmapmask" 1
 	"$envmapsaturation" .1 .5 .5
 	"$model" 1
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }
 
 	

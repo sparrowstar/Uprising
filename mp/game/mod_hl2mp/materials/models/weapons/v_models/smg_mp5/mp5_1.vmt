@@ -5,5 +5,5 @@ VertexLitGeneric
 	"$envmapmask" "models\weapons\v_models\smg_mp5\mp5_1_ref"
 	
 	"$halflambert" "1"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }

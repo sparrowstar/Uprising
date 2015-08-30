@@ -13,7 +13,6 @@
 	"$rimlightexponent" "6"
 	
 	"$phongexponenttexture" "models/weapons/c_arms_citizen/c_arms_citizen_sleeves_normal"
-	"$lightwarptexture" "models\lightwarps\hand_lightwarp"
 	"$rimmask" "1"
 	
 	// Tinting

@@ -13,5 +13,5 @@ VertexLitGeneric
 	"$phongboost" "1"
 	"$phongexponent" "10"
 	"$phongfresnelranges" "[0.1 0.3 1.0]"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }

@@ -3,5 +3,5 @@
 	"$baseTexture" "models\weapons\v_models\30cal\v_30cal"
 	"$envmap" "env_cubemap"
      	"$basealphaenvmapmask" 1
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	//"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 }
