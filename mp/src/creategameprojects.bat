@@ -1,1 +1,2 @@
-devtools\bin\vpc.exe /hl2mp +game /mksln games.sln
+devtools\bin\vpc.exe /hl2mp /2013 +game /mksln games.sln
+pause
