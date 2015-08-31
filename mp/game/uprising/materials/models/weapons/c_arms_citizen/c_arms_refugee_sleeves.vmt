@@ -23,11 +23,11 @@
 	// "$color2" "{0 0 0}" // Anthracite
 	// "$color2" "{62 88 106}" // Blue (dark)
 	// "$color2" "{59 121 170}" // Blue (fortress)
-	 "$color2" "{182 217 234}" // Blue (sky)
+	// "$color2" "{182 217 234}" // Blue (sky)
 	// "$color2" "{86 72 60}" // Brown (dark)
 	// "$color2" "{196 162 128}" // Brown (light)
 	// "$color2" "{96 174 140}" // Green (medical)
-	// "$color2" "{128 196 112}" // Green (wildlife)
+	 "$color2" "{128 196 112}" // Green (wildlife)
 	// "$color2" "{255 110 220}" // Purple (candy)
 	// "$color2" "{152 144 226}" // Purple (lavande)
 	// "$color2" "{160 100 140}" // Purple (saints)
