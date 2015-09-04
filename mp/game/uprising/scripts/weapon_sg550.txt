@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.45"
 	"CrosshairMinDistance"		"5"
 	"CrosshairDeltaDistance"	"3"
-	"Team"				"CT"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team"				"CT"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension"	"sg550"
 	"MuzzleFlashScale"		"1.6"
 	"MuzzleFlashStyle"		"CS_MUZZLEFLASH_X"
@@ -57,8 +57,8 @@ WeaponData
 	"playermodel"			"models/weapons/w_snip_sg550.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"3"
+	"bucket_position"		"6"
 
 	"clip_size"			"30"
 	

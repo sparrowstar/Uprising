@@ -9,7 +9,7 @@
 #include "in_buttons.h"
 #include "takedamageinfo.h"
 #include "ammodef.h"
-#include "hl2mp_gamerules.h"
+#include "cs_gamerules.h"
 
 
 #ifdef CLIENT_DLL
@@ -23,12 +23,12 @@ extern IVModelInfo* modelinfo;
 
 	#include "vgui/ISurface.h"
 	#include "vgui_controls/Controls.h"
-	#include "c_hl2mp_player.h"
+	#include "c_cs_player.h"
 	#include "hud_crosshair.h"
 
 #else
 
-	#include "hl2mp_player.h"
+	#include "cs_player.h"
 	#include "vphysics/constraints.h"
 
 #endif
@@ -40,10 +40,12 @@ extern IVModelInfo* modelinfo;
 // Global functions.
 // ----------------------------------------------------------------------------- //
 
+#ifndef CSTRIKE_DLL
 bool IsAmmoType( int iAmmoType, const char *pAmmoName )
 {
 	return GetAmmoDef()->Index( pAmmoName ) == iAmmoType;
 }
+#endif
 
 static const char * s_WeaponAliasInfo[] = 
 {
@@ -131,9 +133,9 @@ CBasePlayer* CWeaponHL2MPBase::GetPlayerOwner() const
 	return dynamic_cast< CBasePlayer* >( GetOwner() );
 }
 
-CHL2MP_Player* CWeaponHL2MPBase::GetHL2MPPlayerOwner() const
+CCSPlayer* CWeaponHL2MPBase::GetHL2MPPlayerOwner() const
 {
-	return dynamic_cast< CHL2MP_Player* >( GetOwner() );
+	return dynamic_cast< CCSPlayer* >( GetOwner() );
 }
 
 #ifdef CLIENT_DLL
@@ -182,7 +184,10 @@ void CWeaponHL2MPBase::Materialize( void )
 		VPhysicsInitNormal( SOLID_BBOX, GetSolidFlags() | FSOLID_TRIGGER, false );
 		SetMoveType( MOVETYPE_VPHYSICS );
 
-		HL2MPRules()->AddLevelDesignerPlacedObject( this );
+#ifndef CSTRIKE_DLL
+		CSGameRules()->AddLevelDesignerPlacedObject( this );
+#endif
+
 	}
 
 	if ( HasSpawnFlags( SF_NORESPAWN ) == false )

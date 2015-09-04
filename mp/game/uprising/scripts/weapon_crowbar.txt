@@ -9,7 +9,7 @@ WeaponData
 	"playermodel"			"models/weapons/w_crowbar.mdl"
 	"anim_prefix"			"crowbar"
 	"bucket"				"0"
-	"bucket_position"		"0"
+	"bucket_position"		"1"
 
 	"clip_size"				"-1"
 	"primary_ammo"			"None"

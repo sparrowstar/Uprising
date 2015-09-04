@@ -23,7 +23,7 @@
 #ifdef CSTRIKE_DLL
 #include "cs_shareddefs.h"
 #include "nav_pathfind.h"
-#include "cs_nav_area.h"
+//#include "cs_nav_area.h"
 #endif
 
 // NOTE: This has to be the last file included!
@@ -1042,7 +1042,7 @@ static void WarnIfMeshNeedsAnalysis( int version )
 
 		FOR_EACH_VEC( TheNavAreas, it )
 		{
-			CCSNavArea *area = dynamic_cast< CCSNavArea * >( TheNavAreas[ it ] );
+			/*CCSNavArea *area = dynamic_cast< CCSNavArea * >( TheNavAreas[ it ] );
 			if ( area )
 			{
 				if ( area->GetApproachInfoCount() )
@@ -1054,7 +1054,7 @@ static void WarnIfMeshNeedsAnalysis( int version )
 				{
 					hasSpotEncounters = true;
 				}
-			}
+			}*/
 		}
 
 		if ( !hasApproachAreas || !hasSpotEncounters )

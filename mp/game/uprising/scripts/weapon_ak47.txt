@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.55"
 	"CrosshairMinDistance"		"4"
 	"CrosshairDeltaDistance"	"4"
-	"Team" 				"TERRORIST"
-	"BuiltRightHanded" 		"0"
+	"Team""ANY" //"Team" 				"TERRORIST"
+	//"BuiltRightHanded" 		"0"
 	"PlayerAnimationExtension" 	"ak"
 	"MuzzleFlashScale"		"1.6"
 	"MuzzleFlashStyle"		"CS_MUZZLEFLASH_X"
@@ -48,8 +48,8 @@ WeaponData
 	"playermodel"			"models/weapons/w_rif_ak47.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"2"
+	"bucket_position"		"12"
 
 	"clip_size"			"30"
 	

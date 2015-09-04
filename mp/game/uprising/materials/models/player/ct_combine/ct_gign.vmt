@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+"$basetexture" "models/player/ct_combine/ct_gign"
+"$bumpmap" "models/player/ct_combine/ct_gign_normal"
+"$phong" "1"
+"$phongboost" "5"
+"$phongexponenttexture" "models/player/ct_combine/ct_gign_phong"
+"$phongalbedotint" "1"										
+"$phongfresnelranges" "[.1 .5  1]"
+}

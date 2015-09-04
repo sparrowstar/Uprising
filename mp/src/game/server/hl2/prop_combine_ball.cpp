@@ -22,7 +22,7 @@
 #include "filters.h"
 #include "SpriteTrail.h"
 #include "decals.h"
-#include "hl2_player.h"
+#include "cs_player.h"
 #include "eventqueue.h"
 #include "physics_collisionevent.h"
 #include "gamestats.h"
@@ -585,7 +585,7 @@ void CPropCombineBall::InputSocketed( inputdata_t &inputdata )
 	}
 
 	// if our owner is a player, tell them we were socketed
-	CHL2_Player *pPlayer = dynamic_cast<CHL2_Player *>( pOwner );
+	CCSPlayer *pPlayer = dynamic_cast<CCSPlayer *>( pOwner );
 	if ( pPlayer )
 	{
 		pPlayer->CombineBallSocketed( this );
@@ -1117,7 +1117,7 @@ void CPropCombineBall::DoExplosion( )
 	if( !m_bStruckEntity && hl2_episodic.GetBool() && GetOwnerEntity() != NULL )
 	{
 		// Notify the player proxy that this combine ball missed so that it can fire an output.
-		CHL2_Player *pPlayer = dynamic_cast<CHL2_Player *>( GetOwnerEntity() );
+		CCSPlayer *pPlayer = dynamic_cast<CCSPlayer *>(GetOwnerEntity());
 		if ( pPlayer )
 		{
 			pPlayer->MissedAR2AltFire();

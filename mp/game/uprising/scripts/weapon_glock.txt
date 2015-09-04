@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.05"
 	"CrosshairMinDistance"		"8"
 	"CrosshairDeltaDistance"	"3"
-	"Team" 				"ANY"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team" 				"ANY"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension" 	"pistol"
 	"MuzzleFlashScale"		"1.0"
 	
@@ -53,7 +53,7 @@ WeaponData
 	"shieldviewmodel"		"models/weapons/v_shield_glock18_r.mdl"	
 	"anim_prefix"			"anim"
 	"bucket"			"1"
-	"bucket_position"		"1"
+	"bucket_position"		"0"
 
 	"clip_size"			"20"
 	

@@ -6,10 +6,11 @@
 
 #include "cbase.h"
 
+
 #if defined( CLIENT_DLL )
-	#include "c_hl2mp_player.h"
+#include "c_cs_player.h"
 #else
-	#include "hl2mp_player.h"
+#include "cs_player.h"
 #endif
 
 #include "weapon_hl2mpbase_machinegun.h"
@@ -91,7 +92,7 @@ void CHL2MPMachineGun::PrimaryAttack( void )
 		m_iClip1 -= iBulletsToFire;
 	}
 
-	CHL2MP_Player *pHL2MPPlayer = ToHL2MPPlayer( pPlayer );
+	CCSPlayer *pHL2MPPlayer = ToCSPlayer( pPlayer );
 
 		// Fire the bullets
 	FireBulletsInfo_t info;

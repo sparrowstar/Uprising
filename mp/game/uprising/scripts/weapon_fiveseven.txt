@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.5"
 	"CrosshairMinDistance"		"8"
 	"CrosshairDeltaDistance"	"3"
-	"Team"				"CT"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team"				"CT"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension"	"pistol"
 	"MuzzleFlashScale"		"1"
 	
@@ -44,7 +44,7 @@ WeaponData
 	"shieldviewmodel"		"models/weapons/v_shield_fiveseven_r.mdl"	
 	"anim_prefix"			"anim"
 	"bucket"			"1"
-	"bucket_position"		"1"
+	"bucket_position"		"5"
 
 	"clip_size"			"20"
 	

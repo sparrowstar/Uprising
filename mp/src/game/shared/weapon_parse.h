@@ -17,6 +17,23 @@ class IFileSystem;
 
 typedef unsigned short WEAPON_FILE_INFO_HANDLE;
 
+//--------------------------------------------------------------------------------------------------------
+enum CSWeaponType
+{
+
+	WEAPONTYPE_KNIFE = 0,
+	WEAPONTYPE_PISTOL,
+	WEAPONTYPE_SUBMACHINEGUN,
+	WEAPONTYPE_RIFLE,
+	WEAPONTYPE_SHOTGUN,
+	WEAPONTYPE_SNIPER_RIFLE,
+	WEAPONTYPE_MACHINEGUN,
+	WEAPONTYPE_C4,
+	WEAPONTYPE_GRENADE,
+	WEAPONTYPE_UNKNOWN
+
+};
+
 // -----------------------------------------------------------
 // Weapon sound types
 // Used to play sounds defined in the weapon's classname.txt file
@@ -98,6 +115,11 @@ public:
 	int						iFlags;									// miscellaneous weapon flags
 	char					szAmmo1[MAX_WEAPON_AMMO_NAME];			// "primary" ammo type
 	char					szAmmo2[MAX_WEAPON_AMMO_NAME];			// "secondary" ammo type
+	float					m_flViewModelFOV;						// Dynamic Viewmodel FOV
+
+	//stuff coppied from CS:S to fix BaseHL weapons
+	CSWeaponType m_WeaponType;
+	char m_szAnimExtension[16];
 
 	// Sound blocks
 	char					aShootSounds[NUM_SHOOT_SOUND_TYPES][MAX_WEAPON_STRING];	

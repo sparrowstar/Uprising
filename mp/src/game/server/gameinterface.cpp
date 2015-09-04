@@ -117,7 +117,7 @@ extern ConVar tf_mm_servermode;
 #endif // USES_ECON_ITEMS
 
 #ifdef CSTRIKE_DLL // BOTPORT: TODO: move these ifdefs out
-#include "bot/bot.h"
+//#include "bot/bot.h"
 #endif
 
 #ifdef PORTAL
@@ -704,7 +704,7 @@ bool CServerGameDLL::DLLInit( CreateInterfaceFn appSystemFactory,
 	gameeventmanager->LoadEventsFromFile("resource/ModEvents.res");
 
 #ifdef CSTRIKE_DLL // BOTPORT: TODO: move these ifdefs out
-	InstallBotControl();
+	//InstallBotControl();
 #endif
 
 	if ( !IGameSystem::InitAllSystems() )
@@ -775,7 +775,7 @@ void CServerGameDLL::DLLShutdown( void )
 	IGameSystem::ShutdownAllSystems();
 
 #ifdef CSTRIKE_DLL // BOTPORT: TODO: move these ifdefs out
-	RemoveBotControl();
+	//RemoveBotControl();
 #endif
 
 #ifndef _XBOX
@@ -832,7 +832,7 @@ float CServerGameDLL::GetTickInterval( void ) const
 // [Forrest] For Counter-Strike, set default tick rate of 66 and removed -tickrate command line parameter.
 //=============================================================================
 // Ignoring this for now, server ops are abusing it
-#if !defined( TF_DLL ) && !defined( CSTRIKE_DLL ) && !defined( DOD_DLL )
+#if !defined( TF_DLL ) && !defined( CSTRIKE_DLL ) && !defined( DOD_DLL ) || defined( UPRISING_DLL )
 //=============================================================================
 // HPE_END
 //=============================================================================
@@ -1136,7 +1136,7 @@ void CServerGameDLL::ServerActivate( edict_t *pEdictList, int edictCount, int cl
 #endif
 
 #ifdef CSTRIKE_DLL // BOTPORT: TODO: move these ifdefs out
-	TheBots->ServerActivate();
+	//TheBots->ServerActivate();
 #endif
 
 #ifdef NEXT_BOT

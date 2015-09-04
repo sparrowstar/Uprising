@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio" 		"1.05"
 	"CrosshairMinDistance" 		"4"
 	"CrosshairDeltaDistance" 	"3"
-	"Team" 				"TERRORIST"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team" 				"TERRORIST"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension" 	"elites"
 	"MuzzleFlashScale"		"1"
 	
@@ -46,7 +46,7 @@ WeaponData
 
 	"anim_prefix"			"anim"
 	"bucket"			"1"
-	"bucket_position"		"1"
+	"bucket_position"		"4"
 
 	"clip_size"			"30"
 	

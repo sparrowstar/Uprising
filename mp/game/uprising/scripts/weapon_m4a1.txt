@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio" 		"1.4"
 	"CrosshairMinDistance" 		"4"
 	"CrosshairDeltaDistance" 	"3"
-	"Team" 				"CT"
-	"BuiltRightHanded" 		"0"
+	"Team""ANY" //"Team" 				"CT"
+	//"BuiltRightHanded" 		"0"
 	"PlayerAnimationExtension" 	"m4"
 	"MuzzleFlashScale"		"1.6"
 	
@@ -58,8 +58,8 @@ WeaponData
 	"SilencerModel"			"models/weapons/w_rif_m4a1_silencer.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"2"
+	"bucket_position"		"11"
 
 	"clip_size"			"30"
 	

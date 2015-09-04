@@ -10,7 +10,7 @@
 #pragma once
 #endif
 
-#include "dod/dod_playeranimstate.h"
+#include "dod_playeranimstate.h"
 
 
 #define DOD_PLAYER_VIEW_OFFSET	Vector( 0, 0, 54 )

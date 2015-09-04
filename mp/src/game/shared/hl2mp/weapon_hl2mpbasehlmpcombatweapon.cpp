@@ -7,7 +7,11 @@
 #include "cbase.h"
 #include "weapon_hl2mpbasehlmpcombatweapon.h"
 
-#include "hl2mp_player_shared.h"
+#if defined( CLIENT_DLL )
+#include "c_cs_player.h"
+#else
+#include "cs_player.h"
+#endif
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -115,7 +119,7 @@ bool CBaseHL2MPCombatWeapon::Deploy( void )
 	// We have to ask the player if the last time it checked, the weapon was lowered
 	if ( GetOwner() && GetOwner()->IsPlayer() )
 	{
-		CHL2MP_Player *pPlayer = assert_cast<CHL2MP_Player*>( GetOwner() );
+		CCSPlayer *pPlayer = assert_cast<CCSPlayer*>( GetOwner() );
 		if ( pPlayer->IsWeaponLowered() )
 		{
 			if ( SelectWeightedSequence( ACT_VM_IDLE_LOWERED ) != ACTIVITY_NOT_AVAILABLE )

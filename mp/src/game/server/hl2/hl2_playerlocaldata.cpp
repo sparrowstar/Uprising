@@ -7,7 +7,7 @@
 
 #include "cbase.h"
 #include "hl2_playerlocaldata.h"
-#include "hl2_player.h"
+#include "cs_player.h"
 #include "mathlib/mathlib.h"
 #include "entitylist.h"
 
@@ -50,7 +50,7 @@ BEGIN_SIMPLE_DATADESC( CHL2PlayerLocalData )
 #endif
 	// Ladder related stuff
 	DEFINE_FIELD( m_hLadder, FIELD_EHANDLE ),
-	DEFINE_EMBEDDED( m_LadderMove ),
+	//DEFINE_EMBEDDED( m_LadderMove ),
 END_DATADESC()
 
 CHL2PlayerLocalData::CHL2PlayerLocalData()

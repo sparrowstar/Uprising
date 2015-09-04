@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.0"
 	"CrosshairMinDistance"		"7"
 	"CrosshairDeltaDistance"	"3"
-	"Team"				"CT"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team"				"CT"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension"	"tmp"
 	"MuzzleFlashScale"		"0.8"
 	"MuzzleFlashStyle"		"CS_MUZZLEFLASH_NONE"
@@ -49,8 +49,8 @@ WeaponData
 	"playermodel"			"models/weapons/w_smg_tmp.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"2"
+	"bucket_position"		"4"
 
 	"clip_size"			"30"
 	

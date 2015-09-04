@@ -5,10 +5,10 @@
 #pragma once
 #endif
 
-#ifdef CLIENT_DLL
-	#include "c_hl2mp_player.h"
+#if defined( CLIENT_DLL )
+#include "c_cs_player.h"
 #else
-	#include "hl2mp_player.h"
+#include "cs_player.h"
 #endif
 
 #include "weapon_hl2mpbase.h"

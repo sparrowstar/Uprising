@@ -1,21 +1,182 @@
+
 "Resource/HudLayout.res"
 {
 	HudHealth
 	{
 		"fieldName"		"HudHealth"
-		"xpos"	"16"
-		"ypos"	"432"
-		"wide"	"102"
-		"tall"  "36"
+		"xpos"	"8"
+		"ypos"	"446"
+		"zpos"	"0"
+ 		"wide"	"80"
+		"tall"  "25"
 		"visible" "1"
 		"enabled" "1"
 
 		"PaintBackgroundType"	"2"
+		"bgcolor_override"		"0 0 0 96"
 		
-		"text_xpos" "8"
-		"text_ypos" "20"
-		"digit_xpos" "50"
-		"digit_ypos" "2"
+		"icon_xpos"	"8"
+		"icon_ypos"	"-4"
+		"digit_xpos" "35"
+		"digit_ypos" "-4"
+		"LowHealthColor"	"HudIcon_Red"
+	}
+	
+	HudArmor
+	{
+		"fieldName"		"HudArmor"
+		"xpos"	"148"
+		"ypos"	"446"
+		"zpos"	"1"
+		"wide"	"80"
+		"tall"  "25"
+		"visible" "1"
+		"enabled" "1"
+
+		"PaintBackgroundType"	"2"
+ 		"bgcolor_override"		"0 0 0 96"
+		
+		"icon_xpos"	"8"
+		"icon_ypos"	"-4"
+		"digit_xpos" "34"
+		"digit_ypos" "-4"
+	}
+	
+	HudRoundTimer
+	{
+		"fieldName" "HudRoundTimer"
+		"xpos"	"c-28"
+		"ypos"	"446"
+		"zpos"	"1"
+		"wide"	"98"
+		"tall"  "25"
+		"visible" "1"
+		"enabled" "1"
+		
+		"PaintBackgroundType"	"2"
+ 		"bgcolor_override"		"0 0 0 96"
+
+		"FlashColor" "HudIcon_Red"		
+
+		"icon_xpos"		"8"
+		"icon_ypos"		"-4"
+		"digit_xpos"	"42"
+		"digit_ypos"	"-4"
+	}
+
+	HudAmmo
+	{
+		"fieldName" "HudAmmo"
+		"xpos"	"r157"
+		"ypos"	"446"
+		"zpos"	"1"
+		"wide"	"142"
+		"tall"  "25"
+		"visible" "1"
+		"enabled" "1"
+
+		"PaintBackgroundType"	"2"
+ 		"bgcolor_override"		"0 0 0 96"
+
+		"digit_xpos" "8"
+		"digit_ypos" "-4"
+		"digit2_xpos" "63"
+		"digit2_ypos" "-4"
+	
+		"bar_xpos"		"53"
+		"bar_ypos"		"3"
+		"bar_height"	"20"
+		"bar_width"		"2"
+
+		"icon_xpos"		"110"
+		"icon_ypos"		"2"
+	}
+
+	HudAccount
+	{
+		"fieldName" "HudAccount"
+		"xpos"	"r123"
+		"ypos"	"394"
+		"wide"	"108"
+		"tall"  "45"
+		"visible" "1"
+		"enabled" "1"
+
+		"PaintBackgroundType"	"2"
+		// "bgcolor_override"		"0 0 0 96"
+
+		"icon_xpos"	"9"
+		"icon_ypos"	"16"
+		"digit_xpos" "100"
+		"digit_ypos" "16"
+		"icon2_xpos" "9"
+		"icon2_ypos" "-4"
+		"digit2_xpos" "100"
+		"digit2_ypos" "-4"
+	}
+
+	overview
+	{
+		"fieldname"				"overview"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"480"
+		"wide"					"0"
+		"tall"					"0"
+	}
+
+	HudCommentary
+	{
+		"fieldName" "HudCommentary"
+		"xpos"	"c-190"
+		"ypos"	"350"
+		"wide"	"380"
+		"tall"  "40"
+		"visible" "1"
+		"enabled" "1"
+		
+		"PaintBackgroundType"	"2"
+		
+		"bar_xpos"		"50"
+		"bar_ypos"		"20"
+		"bar_height"	"8"
+		"bar_width"		"320"
+		"speaker_xpos"	"50"
+		"speaker_ypos"	"8"
+		"count_xpos_from_right"	"10"	// Counts from the right side
+		"count_ypos"	"8"
+		
+		"icon_texture"	"vgui/hud/icon_commentary"
+		"icon_xpos"		"0"
+		"icon_ypos"		"0"		
+		"icon_width"	"40"
+		"icon_height"	"40"
+	}
+	
+	HudHDRDemo
+	{
+		"fieldName" "HudHDRDemo"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"640"
+		"tall"  "480"
+		"visible" "0"
+		"enabled" "1"
+		
+		"Alpha"	"255"
+		"PaintBackgroundType"	"2"
+		
+		"BorderColor"	"0 0 0 255"
+		"BorderLeft"	"16"
+		"BorderRight"	"16"
+		"BorderTop"		"16"
+		"BorderBottom"	"64"
+		"BorderCenter"	"0"
+		
+		"TextColor"		"255 255 255 255"
+		"LeftTitleY"	"422"
+		"RightTitleY"	"422"
 	}
 
 	TargetID
@@ -27,59 +188,6 @@
 		"tall"	 "480"
 	}
 
-	TeamDisplay
-	{
-		"fieldName" "TeamDisplay"
-	    "visible" "0"
-	    "enabled" "1"
-		"xpos"	"16"
-		"ypos"	"415"
-	    "wide" "200"
-	    "tall" "60"
-	    "text_xpos" "8"
-	    "text_ypos" "4"
-	}
-	
-	HudVoiceSelfStatus
-	{
-		"fieldName" "HudVoiceSelfStatus"
-		"visible" "1"
-		"enabled" "1"
-		"xpos" "r43"
-		"ypos" "355"
-		"wide" "24"
-		"tall" "24"
-	}
-
-	HudVoiceStatus
-	{
-		"fieldName" "HudVoiceStatus"
-		"visible" "1"
-		"enabled" "1"
-		"xpos" "r145"
-		"ypos" "0"
-		"wide" "145"
-		"tall" "400"
-
-		"item_wide"	"135"
-		
-		"show_avatar"		"0"
-		
-		"show_dead_icon"	"1"
-		"dead_xpos"			"1"
-		"dead_ypos"			"0"
-		"dead_wide"			"16"
-		"dead_tall"			"16"
-		
-		"show_voice_icon"	"1"
-		"icon_ypos"			"0"
-		"icon_xpos"			"15"
-		"icon_tall"			"16"
-		"icon_wide"			"16"
-		
-		"text_xpos"			"33"
-	}
-	
 	HudSuit
 	{
 		"fieldName"		"HudSuit"
@@ -99,76 +207,104 @@
 		"digit_ypos" "2"
 	}
 
-	HudAmmo
+	HudProgressBar
 	{
-		"fieldName" "HudAmmo"
-		"xpos"	"r150"
-		"ypos"	"432"
-		"wide"	"136"
-		"tall"  "36"
+		"fieldName" "HudProgressBar"
+		"xpos"	"c-150"
+		"ypos"	"300"
+		"wide"	"300"
+		"tall"  "15"
+		"visible" "1"
+		"enabled" "1"
+
+		"BorderThickness" "1"
+
+		"PaintBackgroundType"	"2"
+	}
+
+	HudShoppingCart
+	{
+		"fieldName" "HudShoppingCart"
+		"xpos"	"64"
+		"ypos"	"240"
+		"wide"	"40"
+		"tall"  "40"
 		"visible" "1"
 		"enabled" "1"
 
 		"PaintBackgroundType"	"2"
+		"IconColor"			"HudIcon_Green"
 
-		"text_xpos" "8"
-		"text_ypos" "20"
-		"digit_xpos" "44"
-		"digit_ypos" "2"
-		"digit2_xpos" "98"
-		"digit2_ypos" "16"
 	}
 
-	HudAmmoSecondary
+	HudC4
 	{
-		"fieldName" "HudAmmoSecondary"
-		"xpos"	"r76"
-		"ypos"	"432"
-		"wide"	"60"
-		"tall"  "36"
-		"visible" "1"
-		"enabled" "1"
-
-		"PaintBackgroundType"	"2"
-
-		"digit_xpos" "10"
-		"digit_ypos" "2"
-	}
-	
-	HudSuitPower
-	{
-		"fieldName" "HudSuitPower"
-		"visible" "1"
-		"enabled" "1"
+		"fieldName" "HudC4"
 		"xpos"	"16"
-		"ypos"	"396"
-		"wide"	"102"
-		"tall"	"26"
-		
-		"AuxPowerLowColor" "255 0 0 220"
-		"AuxPowerHighColor" "255 220 0 220"
-		"AuxPowerDisabledAlpha" "70"
-
-		"BarInsetX" "8"
-		"BarInsetY" "15"
-		"BarWidth" "92"
-		"BarHeight" "4"
-		"BarChunkWidth" "6"
-		"BarChunkGap" "3"
-
-		"text_xpos" "8"
-		"text_ypos" "4"
-		"text2_xpos" "8"
-		"text2_ypos" "22"
-		"text2_gap" "10"
+		"ypos"	"240"
+		"wide"	"40"
+		"tall"  "40"
+		"visible" "1"
+		"enabled" "1"
+	
 
 		"PaintBackgroundType"	"2"
+		"IconColor"			"HudIcon_Green"
+		"FlashColor"		"HudIcon_Red"
+
 	}
+
+	HudDefuser
+	{
+		"fieldName" "HudDefuser"
+		"xpos"	"16"
+		"ypos"	"240"
+		"wide"	"40"
+		"tall"  "40"
+		"visible" "1"
+		"enabled" "1"
+
+		"PaintBackgroundType"	"2"
+
+		"IconColor"				"HudIcon_Green"
+
+	}
+
+	HudHostageRescueZone
+	{
+		"fieldName" "HudHostageRescueZone"
+		"xpos"	"16"
+		"ypos"	"240"
+		"wide"	"40"
+		"tall"  "40"
+		"visible" "1"
+		"enabled" "1"
 	
+
+		"PaintBackgroundType"	"2"
+		"IconColor"			"HudIcon_Green"
+		"FlashColor"		"HudIcon_Red"
+	}
+
+	HudScenarioIcon 
+	{
+		"fieldName" "HudScenarioIcon"
+		"xpos"	"c110"
+		"ypos"	"443"
+		"wide"	"40"
+		"tall"  "44"
+		"visible" "1"
+		"enabled" "1"
+
+		"PaintBackgroundType"	"2"
+
+		"IconColor"				"Hostage_Yellow"	
+	}
+
 	HudFlashlight
 	{
 		"fieldName" "HudFlashlight"
-		"visible" "0"
+		"visible" "1"
 		"enabled" "1"
 		"xpos"	"16"
 		"ypos"	"370"
@@ -212,17 +348,24 @@
 	HudWeaponSelection
 	{
 		"fieldName" "HudWeaponSelection"
+		"xpos"	"r640"
+		"wide"	"640"
 		"ypos" 	"16"
 		"visible" "1"
 		"enabled" "1"
-		"SmallBoxSize" "32"
-		"LargeBoxWide" "112"
+		"SmallBoxSize" "60"
+		"LargeBoxWide" "108"
 		"LargeBoxTall" "80"
 		"BoxGap" "8"
 		"SelectionNumberXPos" "4"
 		"SelectionNumberYPos" "4"
 		"SelectionGrowTime"	"0.4"
-		"TextYPos" "64"
+		"IconXPos" "8"
+		"IconYPos" "0"
+		"TextYPos" "68"	
+		"TextColor" "SelectionTextFg"
+		"MaxSlots"	"5"
+		"PlaySelectSounds"	"0"
 	}
 
 	HudCrosshair
@@ -247,13 +390,25 @@
 		"MaxDeathNotices" "4"
 		"LineHeight"	  "22"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
-
+		
 		"TextFont"				"Default"
+		"CTTextColor"			"CT_Blue"
+		"TerroristTextColor"	"T_Red"	
 	}
 
 	HudVehicle
 	{
 		"fieldName" "HudVehicle"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
+
+
+	CVProfPanel
+	{
+		"fieldName" "CVProfPanel"
 		"visible" "1"
 		"enabled" "1"
 		"wide"	 "640"
@@ -303,41 +458,32 @@
 		"enabled" "1"
 		"wide"	 "640"
 		"tall"	 "480"
+		"zpos" "1"
+
+		"TextFont"				"Default"
+		"ItemFont"				"Default"
+		"ItemFontPulsing"		"Default"
+
 	}
 
 	HudCloseCaption
 	{
 		"fieldName" "HudCloseCaption"
-		"visible"	"1"
-		"enabled"	"1"
-		"xpos"		"c-250"
-		"ypos"		"276"
-		"wide"		"500"
-		"tall"		"136"
-
-		"BgAlpha"	"128"
-
-		"GrowTime"		"0.25"
-		"ItemHiddenTime"	"0.2"  // Nearly same as grow time so that the item doesn't start to show until growth is finished
-		"ItemFadeInTime"	"0.15"	// Once ItemHiddenTime is finished, takes this much longer to fade in
-		"ItemFadeOutTime"	"0.3"
-
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
 	}
 
-	HudHistoryResource
+	HudHistoryResource 
 	{
 		"fieldName" "HudHistoryResource"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"r252"
-		"ypos"	"40"
-		"wide"	 "248"
-		"tall"	 "320"
-
-		"history_gap"	"56"
-		"icon_inset"	"28"
-		"text_inset"	"26"
-		"NumberFont"	"HudNumbersSmall"
+		"xpos"	 "r640"
+		"wide"	 "640"
+		"tall"	 "350"
+		"history_gap" "50"
 	}
 
 	HudGeiger
@@ -374,6 +520,22 @@
 		"wide"	 "640"
 		"tall"	 "480"
 	}
+	CBudgetPanel
+	{
+		"fieldName" "CBudgetPanel"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
+	CTextureBudgetPanel
+	{
+		"fieldName" "CTextureBudgetPanel"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
 
 	HudPredictionDump
 	{
@@ -384,15 +546,113 @@
 		"tall"	 "480"
 	}
 
+	HudRadar
+	{
+		"fieldName" "HudRadar"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"16"
+		"ypos"		"16"
+		"wide"		"96"
+		"tall"		"96"
+	}
+
+	HudLocation
+	{
+		"fieldName" "HudLocation"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"16"
+		"ypos"		"112"
+		"wide"		"96"
+		"tall"		"16"
+		"textAlignment"	"north"
+	}
+
+	HudScope
+	{
+		"fieldName" "HudZoom"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
+
+	HudVoiceSelfStatus
+	{
+		"fieldName" "HudVoiceSelfStatus"
+		"visible" "1"
+		"enabled" "1"
+		"xpos" "r34"
+		"ypos" "355"
+		"wide" "24"
+		"tall" "24"
+	}
+
+	HudVoiceStatus
+	{
+		"fieldName" "HudVoiceStatus"
+		"visible" "1"
+		"enabled" "1"
+		"xpos" "r200"
+		"ypos" "0"
+		"wide" "200"
+		"tall" "400"
+
+		"item_tall"	"16"
+		"item_wide"	"195"
+		"item_spacing" "2"
+		
+		"show_avatar"		"1"
+		"show_friend"		"1"
+		"show_voice_icon"	"0"
+		"show_dead_icon"	"1"
+
+		"dead_xpos"	"0"
+		"dead_ypos"	"0"
+		"dead_wide"	"16"
+		"dead_tall"	"16"
+
+		"avatar_xpos"	"14"
+		"avatar_ypos"	"0"
+		"avatar_wide"	"16"
+		"avatar_tall"	"16"
+		
+		"text_xpos"	"42"
+		
+		"fade_in_time" "0.07"
+		"fade_out_time" "1.0"
+	}
+
+	HudFlashbang
+	{
+	}
+	
 	HudHintDisplay
 	{
 		"fieldName"	"HudHintDisplay"
 		"visible"	"0"
 		"enabled" "1"
-		"xpos"	"r120"
-		"ypos"	"r340"
-		"wide"	"100"
-		"tall"	"200"
+		"xpos"		"c-240"
+		"ypos"		"c60"
+		"wide"		"480"
+		"tall"		"100"
+		"text_xpos"	"8"
+		"text_ypos"	"8"
+		"center_x"	"0"	// center text horizontally
+		"center_y"	"-1"	// align text on the bottom
+		"HintSize"	"1"
+	}
+
+	HudHintKeyDisplay
+	{
+		"fieldName"	"HudHintKeyDisplay"
+		"visible"	"0"
+		"enabled" 	"1"
+		"xpos"		"r120"
+		"ypos"		"r340"
+		"wide"		"100"
+		"tall"		"200"
 		"text_xpos"	"8"
 		"text_ypos"	"8"
 		"text_xgap"	"8"
@@ -402,51 +662,28 @@
 		"PaintBackgroundType"	"2"
 	}
 
-	HudSquadStatus
+	HudTerritory
 	{
-		"fieldName"	"HudSquadStatus"
-		"visible"	"1"
+		"fieldName" "HudTerritory"
+		"visible" "1"
 		"enabled" "1"
-		"xpos"	"r120"
-		"ypos"	"380"
-		"wide"	"104"
-		"tall"	"46"
-		"text_xpos"	"8"
-		"text_ypos"	"34"
-		"SquadIconColor"	"255 220 0 160"
-		"IconInsetX"	"8"
-		"IconInsetY"	"0"
-		"IconGap"		"24"
-
-		"PaintBackgroundType"	"2"
+		"xpos"	"240"
+	    	"ypos"	"432"
+	    	"wide" "240"
+	    	"tall" "48"
 	}
 
-	HudPoisonDamageIndicator
+	TerritorySCore
 	{
-		"fieldName"	"HudPoisonDamageIndicator"
-		"visible"	"0"
-		"enabled" "1"
-		"xpos"	"16"
-		"ypos"	"346"
-		"wide"	"136"
-		"tall"	"38"
-		"text_xpos"	"8"
-		"text_ypos"	"8"
-		"text_ygap" "14"
-		"TextColor"	"255 170 0 220"
-		"PaintBackgroundType"	"2"
-	}
-	HudCredits
-	{
-		"fieldName"	"HudCredits"
-		"TextFont"	"Default"
-		"visible"	"1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"640"
-		"tall"	"480"
-		"TextColor"	"255 255 255 192"
-
+	    "fieldName" "TerritoryScore"
+	    "visible" "0"
+	    "enabled" "0"
+	    "xpos"	"240"
+	    "ypos"	"450"
+	    "wide" "200"
+	    "tall" "200"
+	    "text_xpos" "8"
+	    "text_ypos" "4"
 	}
 	"HudChat"
 	{
@@ -454,52 +691,105 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"10"
+		"xpos"			"10"	[$WIN32]
+		"xpos"			"42"	[$X360]
 		"ypos"			"275"
 		"wide"	 		"320"
 		"tall"	 		"120"
 		"PaintBackgroundType"	"2"
 	}
 	
-	AchievementNotificationPanel	
+	WinPanel_Round
 	{
-		"fieldName"	"AchievementNotificationPanel"
-		"visible"	"0"
-		"enabled"	"0"
+		"fieldName"				"WinPanel_Round"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"c-110"
+		"ypos"					"287"		
+		"zpos"					"0"		
+		"wide"					"220"
+		"tall"					"138"		
+		"PaintBackgroundType"	"2"
 	}
 	
-	HudHintKeyDisplay
+	WinPanel_Match
 	{
-		"fieldName"	"HudHintKeyDisplay"
-		"visible"	"0"
-		"enabled" 	"0"
+		"fieldName"				"WinPanel_Match"	
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"c-150"
+		"ypos"					"c-175"
+		"wide"					"300"
+		"tall"					"350"
+		"PaintBackgroundType"	"2"
+	}
+	
+	FreezePanel
+	{
+		"fieldName"				"FreezePanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"f0"
+		"tall"					"480"
+	}
+
+	FreezePanelCallout
+	{
+		"fieldName"				"FreezePanelCallout"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"200"
+		"ypos"					"200"
+		"wide"					"100"
+		"tall"					"50"
+	}
+	
+	AchievementAnnouncePanel
+	{
+		"fieldName"				"AchievementAnnouncePanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"f0"
+		"tall"					"480"
+	}
+	
+	StatPanel
+	{
+		"fieldName"				"StatPanel"
+		"visible"				"0"
+		"enabled"				"1"
+	}
+	
+	AchievementNotificationPanel
+	{
+		"fieldName"				"AchievementNotificationPanel"
+		"visible"				"0"
+		"enabled"				"1"
 	}
 	
 	HUDAutoAim
 	{
-		"fieldName"	"HUDAutoAim"
-		"visible"	"0"
-		"enabled"	"0"
-	}	
-	
-	HudHDRDemo
+		"fieldName"				"HUDAutoAim"
+		"visible"				"0"
+		"enabled"				"1"
+	}
+
+	"HudAchievementTracker"
 	{
-		"fieldName"	"HudHDRDemo"
-		"visible"	"0"
-		"enabled"	"0"
+		"ControlName"	"EditablePanel"
+		"fieldName"		"HudAchievementTracker"
+		"xpos"			"10"
+		"NormalY"		"120"
+		"EngineerY"		"170"
+		"zpos"			"20"
+		"wide"			"250"
+		"tall"			"280"
+		"visible"		"1"
+		"enabled"		"1"	
 	}
 	
-	HudCommentary
-	{
-		"fieldName"	"HudCommentary"
-		"visible"	"0"
-		"enabled"	"0"
-	}
-	
-	"CHudVote"
-	{
-		"fieldName"		"CHudVote"
-		"visible"		"0"
-		"enabled"		"0"
-	}
 }

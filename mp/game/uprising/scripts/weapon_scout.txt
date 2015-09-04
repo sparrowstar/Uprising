@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"1.7"
 	"CrosshairMinDistance"		"5"
 	"CrosshairDeltaDistance"	"3"
-	"Team"				"ANY"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team"				"ANY"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension"	"scout"
 	"MuzzleFlashScale"		"1.1"
 	
@@ -57,8 +57,8 @@ WeaponData
 	"playermodel"			"models/weapons/w_snip_scout.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"3"
+	"bucket_position"		"5"
 
 	"clip_size"			"10"
 	

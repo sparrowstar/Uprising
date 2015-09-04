@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio"		"0.95"
 	"CrosshairMinDistance"		"9"
 	"CrosshairDeltaDistance"	"3"
-	"Team"				"TERRORIST"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team"				"TERRORIST"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension"	"mac10"
 	"MuzzleFlashScale"		"1.1"
 	
@@ -48,8 +48,8 @@ WeaponData
 	"playermodel"			"models/weapons/w_smg_mac10.mdl"
 	
 	"anim_prefix"			"anim"
-	"bucket"			"0"
-	"bucket_position"		"0"
+	"bucket"			"2"
+	"bucket_position"		"1"
 
 	"clip_size"			"30"
 	

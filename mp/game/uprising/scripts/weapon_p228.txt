@@ -7,8 +7,8 @@ WeaponData
 	"WeaponArmorRatio" 		"1.25"
 	"CrosshairMinDistance"		"8"
 	"CrosshairDeltaDistance"	"3"
-	"Team" 				"ANY"
-	"BuiltRightHanded"		"0"
+	"Team""ANY" //"Team" 				"ANY"
+	//"BuiltRightHanded"		"0"
 	"PlayerAnimationExtension" 	"pistol"
 	"MuzzleFlashScale"		"1"
 	
@@ -44,7 +44,7 @@ WeaponData
 	"playermodel"			"models/weapons/w_pist_p228.mdl"
 	"anim_prefix"			"anim"
 	"bucket"			"1"
-	"bucket_position"		"1"
+	"bucket_position"		"3"
 
 	"clip_size"			"13"
 	

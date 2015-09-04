@@ -7,7 +7,7 @@
 #include "c_te_effect_dispatch.h"
 #include "tempent.h"
 #include "c_te_legacytempents.h"
-#include "dod/dod_shareddefs.h"
+#include "dod_shareddefs.h"
 
 #define TE_RIFLE_SHELL 1024
 #define TE_PISTOL_SHELL 2048

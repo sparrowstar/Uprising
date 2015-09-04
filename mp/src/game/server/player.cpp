@@ -4246,7 +4246,8 @@ void CBasePlayer::SetSuitUpdate(const char *name, int fgroup, int iNoRepeatTime)
 	int isentence;
 	int iempty = -1;
 	
-	
+	//Uprising: Always play HEV Noises 
+#ifndef UPRISING_DLL
 	// Ignore suit updates if no suit
 	if ( !IsSuitEquipped() )
 		return;
@@ -4256,7 +4257,7 @@ void CBasePlayer::SetSuitUpdate(const char *name, int fgroup, int iNoRepeatTime)
 		// due to static channel design, etc. We don't play HEV sounds in multiplayer right now.
 		return;
 	}
-
+#endif	
 	// if name == NULL, then clear out the queue
 
 	if (!name)

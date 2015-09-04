@@ -7,7 +7,11 @@
 #include "cbase.h"
 #include "basehlcombatweapon_shared.h"
 
-#include "hl2_player_shared.h"
+#if defined( CLIENT_DLL )
+#include "c_cs_player.h"
+#else
+#include "cs_player.h"
+#endif
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -121,7 +125,7 @@ bool CBaseHLCombatWeapon::Deploy( void )
 	// We have to ask the player if the last time it checked, the weapon was lowered
 	if ( GetOwner() && GetOwner()->IsPlayer() )
 	{
-		CHL2_Player *pPlayer = assert_cast<CHL2_Player*>( GetOwner() );
+		CCSPlayer *pPlayer = assert_cast<CCSPlayer*>( GetOwner() );
 		if ( pPlayer->IsWeaponLowered() )
 		{
 			if ( SelectWeightedSequence( ACT_VM_IDLE_LOWERED ) != ACTIVITY_NOT_AVAILABLE )
@@ -192,7 +196,7 @@ void CBaseHLCombatWeapon::WeaponIdle( void )
 	if ( WeaponShouldBeLowered() )
 	{
 #if !defined( CLIENT_DLL )
-		CHL2_Player *pPlayer = dynamic_cast<CHL2_Player*>(GetOwner());
+		CCSPlayer *pPlayer = dynamic_cast<CCSPlayer*>(GetOwner());
 
 		if( pPlayer )
 		{
@@ -229,7 +233,7 @@ void CBaseHLCombatWeapon::WeaponIdle( void )
 float	g_lateralBob;
 float	g_verticalBob;
 
-#if defined( CLIENT_DLL ) && ( !defined( HL2MP ) && !defined( PORTAL ) )
+#if defined( CLIENT_DLL )
 
 #define	HL2_BOB_CYCLE_MIN	1.0f
 #define	HL2_BOB_CYCLE_MAX	0.45f

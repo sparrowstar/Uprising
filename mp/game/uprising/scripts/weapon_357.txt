@@ -9,7 +9,7 @@ WeaponData
 	"playermodel"		"models/weapons/w_357.mdl"
 	"anim_prefix"		"python"
 	"bucket"			"1"
-	"bucket_position"	"1"
+	"bucket_position"	"6"
 
 	"clip_size"			"6"
 	"default_clip"		"6"

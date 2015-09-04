@@ -42,7 +42,7 @@ extern const ConVar *sv_cheats;
 #if !defined(NO_STEAM) && defined(CLIENT_DLL)
 #if defined(TF_CLIENT_DLL) ||  defined(CSTRIKE_DLL)
 #define STEAMWORKS_GAMESTATS_ACTIVE
-#include "steamworks_gamestats.h"
+//#include "steamworks_gamestats.h"
 #endif
 #endif
 
@@ -1018,11 +1018,11 @@ void CBaseGameStats_Driver::CollectData( StatSendType_t sendType )
 	
 #if defined(STEAMWORKS_GAMESTATS_ACTIVE)
 	// At the end of every map, clients submit their perfdata for the map
-	if ( sendType == STATSEND_LEVELSHUTDOWN && pGamestatsData && pGamestatsData->m_bHaveData )
-	{
-		GetSteamWorksSGameStatsUploader().AddClientPerfData( pGamestatsData->m_pKVData );
-	}
-	GetSteamWorksSGameStatsUploader().LevelShutdown();
+	//if ( sendType == STATSEND_LEVELSHUTDOWN && pGamestatsData && pGamestatsData->m_bHaveData )
+	//{
+	//	GetSteamWorksSGameStatsUploader().AddClientPerfData( pGamestatsData->m_pKVData );
+	//}
+	//GetSteamWorksSGameStatsUploader().LevelShutdown();
 #endif
 
 	// add game-specific data
